@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 1.0.0 skeleton version
+
+# Naive UI Admin
 ## 1.6.1 (2022-01-06)
 
 ### 🐛 Bug Fixes
