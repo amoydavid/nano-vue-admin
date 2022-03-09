@@ -3,7 +3,7 @@
     <div class="view-account-header"></div>
     <div class="view-account-container">
       <div class="view-account-top">
-        <div class="view-account-top-system-name text-lg">{{systemName}}</div>
+        <div class="text-lg">{{systemName}}</div>
       </div>
       <div class="view-account-form">
         <n-form
@@ -87,7 +87,6 @@
   import { useUserStore } from '@/store/modules/user';
   import { useMessage } from 'naive-ui';
   import { ResultEnum } from '@/enums/httpEnum';
-  import logo from '@/assets/images/logo.png';
   import { PersonOutline, LockClosedOutline, LogoGithub, LogoFacebook } from '@vicons/ionicons5';
   import { getAppEnvConfig } from '@/utils/env';
 
@@ -156,9 +155,9 @@
     });
   };
 
-  const onAuthCode = () => {
-    formInline.isCaptcha = true;
-  }
+  // const onAuthCode = () => {
+  //   formInline.isCaptcha = true;
+  // }
 
   const systemName = getAppEnvConfig().VITE_GLOB_APP_TITLE;
 
@@ -182,6 +181,7 @@
     &-top {
       padding: 32px 0;
       text-align: center;
+      margin-top: 100px;
 
       &-desc {
         font-size: 14px;
